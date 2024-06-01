@@ -1,14 +1,14 @@
-let operation = "multi";
+const operation = "subtract";
 let a = 1;
 let b = 2;
-function calc(operation, a, b) {
+const calc = (a, b, operation) => {
   switch (operation) {
-    case "add":
+    case "sum":
       return a + b;
     case "subtract":
       return a - b;
     case "multi":
       return a * b;
   }
-}
-console.log(calc(operation, 1, 2));
+};
+console.log(calc(a, b, operation));
