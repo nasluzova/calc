@@ -1,7 +1,7 @@
-const operation = "subtract";
-let a = 1;
-let b = 2;
-const calc = (a, b, operation) => {
+const operation = "sum";
+const a = 1;
+const b = 2;
+function calc(a, b, operation) {
   switch (operation) {
     case "sum":
       return a + b;
@@ -10,5 +10,5 @@ const calc = (a, b, operation) => {
     case "multi":
       return a * b;
   }
-};
+}
 console.log(calc(a, b, operation));
